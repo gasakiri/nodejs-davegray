@@ -1,0 +1,20 @@
+{
+  "name": "06_lesson",
+  "version": "1.0.0",
+  "description": "Express tutorial",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Dave Gray",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "*",
+    "express": "^5.1.0",
+    "uuid": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
