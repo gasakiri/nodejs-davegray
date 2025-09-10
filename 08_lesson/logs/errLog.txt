@@ -1,0 +1,8 @@
+20250908	23:17:50	4af40a4a-14aa-4130-9dba-320d3bd5b48a	TypeError: fsPromises.readFil is not a function
+20250909	11:20:51	d6c80be9-17dc-409e-b57a-bc24529f7af9	Error: Not allowed by CORS
+20250909	19:33:35	b88a68a0-6e3d-438b-90ec-a9a46125c5a3	NotFoundError: Not Found
+20250909	19:34:05	9459817e-823c-41c6-a895-967588c72e96	NotFoundError: Not Found
+20250909	19:34:06	32335223-d76f-45af-b3b7-d4f9ade641dc	NotFoundError: Not Found
+20250909	19:34:50	c7b18576-e01b-461a-9ef7-11c6e3e11239	NotFoundError: Not Found
+20250909	20:52:57	9d46f233-874c-47fa-b03c-ae225ff2f087	TypeError: Cannot read properties of undefined (reading 'firstname')
+20250909	20:53:15	70140252-24e9-43b7-8233-fd4064c34b7d	TypeError: Cannot read properties of undefined (reading 'firstname')
