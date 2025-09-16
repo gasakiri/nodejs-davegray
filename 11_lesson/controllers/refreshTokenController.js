@@ -1,0 +1,40 @@
+import { createRequire } from "module";
+import jwt from "jsonwebtoken";
+
+const require = createRequire(import.meta.url);
+
+const usersDB = {
+    users: require("../model/users.json"),
+    setUsers: function (data) { this.users = data }
+};
+
+const handleRefreshToken = (req, res) => {
+    const cookies = req.cookies;
+    if (!cookies?.jwt)
+        return res.sendStatus(401); // Unauthorized
+    console.log(cookies.jwt);
+    const refreshToken = cookies.jwt;
+
+    const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
+    if (!foundUser)
+        return res.sendStatus(403); // Forbidden
+    // evaluate jwt
+
+    jwt.verify(
+        refreshToken,
+        process.env.REFRESH_TOKEN_SECRET,
+        (err, decoded) => {
+            if (err || foundUser.username !== decoded.username)
+                return res.sendStatus(403);
+
+            const accessToken = jwt.sign(
+                { "username": decoded.username },
+                process.env.ACCESS_TOKEN_SECRET,
+                { expiresIn: "30s" }
+            );
+            res.json({ accessToken });
+        }
+    );
+};
+
+export default handleRefreshToken;
