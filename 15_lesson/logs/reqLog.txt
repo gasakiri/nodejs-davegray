@@ -1,0 +1,8 @@
+20250917	19:27:15	5f511865-cd61-442f-ad6f-2a6391386552	POST	undefined	/auth
+20250917	19:27:24	52b4b671-a89d-46a2-8c07-2dee42ae080e	POST	undefined	/auth
+20250917	19:27:31	b2968227-4b97-4c07-91cc-e8eb4dce91fb	POST	undefined	/employees
+20250917	19:29:37	f384922e-6cb5-4e70-acfd-3cb6dd8c9d56	POST	undefined	/auth
+20250917	19:30:15	632379a0-dff0-4303-9b64-c96670584744	POST	undefined	/auth
+20250917	19:30:27	e994184f-d1e1-4e48-afaf-566b6768b4e7	POST	undefined	/employees
+20250917	19:31:49	bb273488-4475-4f8f-8d80-e9d68b50cef7	POST	undefined	/auth
+20250917	19:32:07	17c960d9-8410-48d3-a2a4-80f0f6148f47	POST	undefined	/employees
